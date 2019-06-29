@@ -12,6 +12,6 @@ steps:
     - laravel-k8-web=gcr.io/$PROJECT_ID/laravel_k8_app:master.$BUILD_ID
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=my-cluster'
+    - 'CLOUDSDK_CONTAINER_CLUSTER=laravel-k8-cluster'
 images:
 - 'gcr.io/$PROJECT_ID/laravel_k8_app:master.$BUILD_ID'
